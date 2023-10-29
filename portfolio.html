@@ -1,369 +1,465 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
     <style>
-        *{
-            margin: 0;
-            padding: 0;
-        }
-        body{
-            background-color: rgb(255, 255, 255);
-            color: rgb(41, 36, 36);
-            font-family: 'Poppins', sans-serif;
-        }
-        nav{
-            display: flex;
-            background-color: rgb(131, 5, 5);
-            justify-content: space-around;
-            align-items: center;
-            height: 80px;
-            color: white;
-        }
-        nav ul{
-            display: flex;
-            justify-content: center;
-        }
-        nav ul li{
-            list-style: none;
-            margin: 0 23px;
-        }
-        nav ul li a{
-            text-decoration: none;
-            color: white;
-        }
-        nav ul li a:hover{
-            font-size: 1.04rem;
-            color: rgb(75, 7, 7);
-        }
-        .left{
-             font-size: 1.4rem;
-             color: white;
-        }
-        
-        .firstsection{
-            display: flex;
-            justify-content: space-around;
-            margin: 26px 320px;
-        
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: rgb(255, 255, 255);
+        color: rgb(41, 36, 36);
+        font-family: "Poppins", sans-serif;
+      }
+      nav {
+        display: flex;
+        background-color: rgb(131, 5, 5);
+        justify-content: space-around;
+        align-items: center;
+        height: 80px;
+        color: white;
+      }
+      nav ul {
+        display: flex;
+        justify-content: center;
+      }
+      nav ul li {
+        list-style: none;
+        margin: 0 23px;
+      }
+      nav ul li a {
+        text-decoration: none;
+        color: white;
+      }
+      nav ul li a:hover {
+        font-size: 1.04rem;
+        color: rgb(75, 7, 7);
+      }
+      .left {
+        font-size: 1.4rem;
+        color: white;
+      }
 
-        }
-        .firstsection>div{
-            
-            width: 45%;
-            
-            
+      .firstsection {
+        display: flex;
+        background-color: white;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+        padding: 138px;
+        margin: 61px 283px;
+        height: 344px;
+      }
 
-        }
-        .leftsection{
-            margin: 206px 0;
-            font-size: 1.9rem;
+      .leftsection {
+        margin: 46px -46px;
+        font-size: 2rem;
+        width: 79%;
+      }
+      .rightsection {
+        position: relative;
+        height: 470px;
+        top: -125px;
+        width: 79%;
+      }
 
-        }
-        
-        .rightsection img{
-            width: 49%;
-            left: 178px;
-            position: relative;
-        }
-        .red{
-            color: rgb(131, 5, 5);
-            font-size: 4rem;
-        }
-        #element{
-            color: rgb(0, 165, 165);
-        }
-        .secondsection{
-            max-width: 80vw;
-            margin: auto;
-            height: 46vh;
+      .rightsection img {
+        width: 35%;
+        position: relative;
+        left: 285px;
+        transition: transform 0.3s;
+      }
+      .rightsection img:hover {
+        transform: scale(1.05); /* Zoom in effect */
+      }
 
-        }
-        main hr{
-            background:  rgb(131, 5, 5);
-            border: 0;
-            height: 0.2px;
-            margin: 6px 127px;
-        }
-        .secondsection h1{
-            font-size: 1.9rem;
-        }
-        .text-gray{
-            color:gray;
-            font-size: 0.8rem;
+      .red {
+        color: rgb(131, 5, 5);
+        font-size: 4rem;
+      }
+      #element {
+        color: rgb(0, 165, 165);
+      }
+      .secondsection {
+        position: relative;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        border-radius: 32px;
+        padding: 138px;
+        background-color: white;
+        /* max-width: 1456px; */
+        margin: auto;
+        height: 20vw;
+        top: -26px;
+        width: 74vw;
+      }
+      main hr {
+        background: rgb(131, 5, 5);
+        border: 0;
+        height: 0.2px;
+        margin: 6px 127px;
+      }
+      .secondsection h1 {
+        font-size: 1.9rem;
+      }
+      .text-gray {
+        color: gray;
+        font-size: 0.8rem;
+      }
+      .secondsection .box {
+        background: rgb(131, 5, 5);
+        width: 76vw;
+        height: 4px;
+        margin: 11px -22px;
+        display: flex;
+      }
 
-        }
-        .secondsection .box{
-             background: rgb(131, 5, 5);
-             width: 80vw;
-             height: 5px;
-             margin: 12px 0;
-             display: flex;
-        }
-            
-        
-        .secondsection .vertical{
-            height: 77px;
-            width: 3px;
-            background: rgb(131, 5, 5);
-            margin: 0 190px;
+      .secondsection .vertical {
+        height: 77px;
+        width: 3px;
+        background: rgb(131, 5, 5);
+        margin: 0 190px;
+      }
+      .vertical-title {
+        position: relative;
+        width: 274px;
+        top: 122px;
+        left: -100px;
+      }
+      .vertical-desc {
+        position: relative;
+        top: 130px;
+        color: rgb(128, 128, 128);
+        width: 250px;
+        font-size: 9px;
+        left: -86px;
+      }
+      .image-top {
+        width: 125px;
+        position: relative;
+        top: 106px;
+        left: -63px;
+        cursor: pointer;
+      }
+      .edit {
+        font-size: 1.3rem;
+      }
+      footer {
+        background-color: rgb(224, 224, 224);
+        color: rgb(63, 63, 63);
+      }
+      .footer {
+        display: flex;
+        padding: 23px 122px;
+        justify-content: space-evenly;
+      }
+      .footer ul {
+        list-style: none;
+      }
+      .footer > div {
+        width: 346px;
+      }
+      footer .footer-rights {
+        text-align: center;
+        padding: 12px 0;
+        color: rgb(104, 103, 103);
+        font-size: 0.7rem;
+      }
 
-        }
-        .vertical-title{
-            position: relative;
-            width: 274px;
-            top:122px;
-            left: -100px;
+      .footer-image {
+        position: relative;
+        width: 10%;
+        left: -11px;
+        top: -4px;
+      }
+      .footer li {
+        display: flex;
+      }
+      .footer-first {
+        position: relative;
+        align-items: center;
+        font-size: 1.5rem;
+        display: flex;
+        top: 27px;
+      }
+      .footer-second {
+        position: relative;
+        align-items: center;
+        display: flex;
+        top: 15px;
+      }
+      .footer-third {
+        position: relative;
+        align-items: center;
+        display: flex;
+        top: 15px;
+      }
+      .footer-link {
+        cursor: pointer;
+        text-decoration: none;
+        transition: color 0.2s;
+        position: relative;
+        display: flex;
+        color: rgb(63, 63, 63);
+      }
 
-        }
-        .vertical-desc{
-            position: relative;
-            top: 130px;
-            color: rgb(128, 128, 128);
-            width: 169px;
-            font-size: 9px;
-            left: -86px;
-
-        }
-        .image-top{
-            width: 125px;
-            position: relative;
-            top: 106px;
-            left: -63px;
-            cursor: pointer;
-           
-        }
-        .edit{
-            font-size: 1.3rem;
-        }
-        footer{
-            background-color: rgb(224, 224, 224);
-            color: rgb(63, 63, 63);
-            
-
-        }
-        .footer{
-            display:flex;
-            padding: 23px 122px;
-            justify-content: space-evenly;
-        }
-        .footer ul{
-            list-style: none;
-        }
-        .footer > div{
-            width: 346px;
-        }
-        footer .footer-rights{
-            text-align: center;
-            padding: 12px 0;
-            color: rgb(104, 103, 103);
-            font-size: 0.7rem;
-        }
-        
-        .footer-image{
-            position: relative;
-            width: 10%;
-            left: -11px;
-            top: -4px;
-        }
-        .footer li{
-            display: flex;
-        }
-        .footer-first{
-            position: relative;
-            align-items: center;
-            font-size: 1.5rem;
-            display: flex;
-            top: 27px;
-        }
-        .footer-second{
-            position: relative;
-            align-items: center;
-            display: flex;
-            top: 15px;
-
-        }
-        .footer-third{
-            position: relative;
-            align-items: center;
-            display: flex;
-            top: 15px;
-
-        }
-        .footer-link {
-            cursor: pointer;
-            text-decoration: none;
-            transition: color 0.2s;
-            position: relative;
-            display: flex;
-            color: rgb(63, 63, 63);
-        }
-
-    /* Change text color to red when hovering */
-    .footer-link:hover {
+      /* Change text color to red when hovering */
+      .footer-link:hover {
         color: rgb(9, 32, 161);
-    }
-    </style>
+      }
 
-</head>
-<body>
+      @media (max-width: 768px) {
+        nav {
+          flex-direction: column; /* Stack nav items vertically */
+          height: auto; /* Adjust height as needed */
+          text-align: center; /* Center-align text */
+        }
+        nav ul {
+          flex-direction: row; /* Make the menu items horizontal */
+          margin-top: 10px; /* Add some spacing between menu items */
+        }
+        .firstsection {
+          flex-direction: column; /* Stack left and right sections vertically */
+          margin: 20px; /* Add margin for separation */
+          padding: 20px; /* Adjust padding as needed */
+          height: auto; /* Adjust height as needed */
+        }
+        .leftsection {
+          height: 177px;
+          font-size: 0.8rem;
+          width: 100%;
+          margin: 7px;
+        }
+        .rightsection {
+          width: 100%; /* Full width for the right section */
+          top: 0; /* Remove vertical offset */
+        }
+        .rightsection img {
+          top: 37px;
+
+          width: 66%;
+          position: relative;
+          left: 54px;
+        }
+        .secondsection {
+          height: 291vw;
+          padding: 12px;
+          top: -9px;
+          width: 84%;
+        }
+        main hr {
+          margin: 10px; /* Adjust margin as needed */
+        }
+        .secondsection .box {
+          flex-direction: column;
+          margin: 10px; /* Adjust margin as needed */
+        }
+        .secondsection .vertical {
+          height: 190px;
+          /* width: 2px; */
+          background: rgb(255 255 255);
+          margin: 47px 48px;
+        }
+        .vertical-title {
+          top: 0; /* Reset vertical offset */
+          left: 0; /* Reset horizontal offset */
+        }
+        .vertical-desc {
+          top: 0; /* Reset vertical offset */
+          left: 0; /* Reset horizontal offset */
+        }
+        .image-top {
+          top: -15px;
+          left: 36px; /* Reset horizontal offset */
+        }
+        .footer {
+          font-size: x-small;
+          flex-direction: column;
+          text-align: left;
+        }
+        .footer > div {
+          width: 221px;
+        }
+        .footer-second {
+          left: -41px;
+          margin-top: 35px;
+        }
+        .footer-third {
+          left: -41px;
+        }
+      }
+    </style>
+  </head>
+  <body>
     <header>
-        <nav>
-            <div class="left">Zisan's Portfolio</div>
-            <div class="right">
-                <ul>
-                    <li><a onclick="showAlert('Home')">Home</a></li>
-                    <li><a onclick="showAlert('About')">About</a></li>
-                    <li><a onclick="showAlert('Projects')">Projects</a></li>
-                    <li><a onclick="showAlert('Contact Me')">Contact Me</a></li>
-                    
-                </ul>
-                
-            </div>
-        </nav>
+      <nav>
+        <div class="left">Zisan's Portfolio</div>
+        <div class="right">
+          <ul>
+            <li><a onclick="showAlert('Home')">Home</a></li>
+            <li><a onclick="showAlert('About')">About</a></li>
+            <li><a onclick="showAlert('Projects')">Projects</a></li>
+            <li><a onclick="showAlert('Contact Me')">Contact Me</a></li>
+          </ul>
+        </div>
+      </nav>
     </header>
 
     <main>
-        <section class="firstsection">
-            <div class="leftsection">
-                Hi, I am <span class="red">Zisan</span> 
-                <div>and I am a Java Developer </div>
-                <div class="edit">I have Skills on <span id="element"></span> </div>
-                
+      <section class="firstsection">
+        <div class="leftsection">
+          Hi, I am <span class="red">Zisan</span>
+          <div>and I am a Java Developer</div>
+          <div class="edit">I have Skills on <span id="element"></span></div>
+        </div>
+        <div class="rightsection">
+          <img src="zisan.jpg" />
+        </div>
+      </section>
+
+      <section class="secondsection">
+        <span class="text-gray">Experience and </span>
+        <h1>Timeline</h1>
+        <div class="box">
+          <div class="vertical">
+            <img
+              class="image-top"
+              src="kafco.jpg"
+              href="https://kafcoeducation.org/"
+            />
+            <div class="vertical-title">KAFCO School & College</div>
+            <div class="vertical-desc">High School(2005-2015)</div>
+          </div>
+          <div class="vertical">
+            <img
+              class="image-top"
+              src="cambrian.png"
+              href="https://www.cambrian.edu.bd/"
+            />
+            <div class="vertical-title">Cambrian School & College</div>
+            <div class="vertical-desc">College(2016-2018)</div>
+          </div>
+          <div class="vertical">
+            <img
+              class="image-top"
+              src="aiub.png"
+              href="https://www.aiub.edu/"
+            />
+            <div class="vertical-title">
+              American International University Bangladesh
             </div>
-            <div class="rightsection">
-                
-                <img src="zisan.jpg">
+            <div class="vertical-desc">
+              I have graduated from American International University Bangladesh
+              in the dept. of Computer Science and Engineering(2019-2023)
             </div>
-
-
-        </section>
-        <hr>
-        <section class="secondsection">
-            <span class="text-gray">Experience and </span>
-            <h1>
-                Timeline
-            </h1>
-            <div class="box">
-                <div class="vertical">
-                    <img class="image-top"src="kafco.jpg" href="https://kafcoeducation.org/">
-                    <div class="vertical-title">KAFCO School & College</div>
-                    <div class="vertical-desc">
-                        High School(2005-2015)
-                    </div>
-                </div>
-                <div class="vertical">
-                    <img class="image-top"src="cambrian.png" href="https://www.cambrian.edu.bd/">
-                    <div class="vertical-title">Cambrian School & College</div>
-                    <div class="vertical-desc">
-                        College(2016-2018)
-                    </div>
-                </div>
-                <div class="vertical">
-                    <img class="image-top"src="aiub.png" href="https://www.aiub.edu/">
-                    <div class="vertical-title">American International
-                        University Bangladesh</div>
-                    <div class="vertical-desc">
-                        I have graduated from American International
-                        University Bangladesh in the dept. of Computer
-                        Science and Engineering(2019-2023)
-                    </div>
-                </div>
-                <div class="vertical">
-                    <img class="image-top"src="gao.png" href="https://gaotek.com/">
-                    <div class="vertical-title">GAO Tec Inc.(GAO Group)</div>
-                    <div class="vertical-desc">
-                        I am Working as a Web Developer Intern at GAO Tec.(2023-Ongoing)
-                    </div>
-                </div>
-                
-
-
+          </div>
+          <div class="vertical">
+            <img class="image-top" src="gao.png" href="https://gaotek.com/" />
+            <div class="vertical-title">GAO Tec Inc.(GAO Group)</div>
+            <div class="vertical-desc">
+              I am Working as a Web Developer Intern at GAO Tec.(2023-Ongoing)
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
     </main>
     <footer>
-        <div class="footer">
-            <div class="footer-first">
-                
-                Zisan's Developed Portfolio
-            </div>
-            <div class="footer-second">
-                <ul class="fo">
-                    <!-- Add a class 'footer-link' to the list items -->
-                    <li>
-                        <a class="footer-link" href="https://www.linkedin.com/in/iamzisan/">
-                            <img class="footer-image" src="linkedin.png">
-                            https://www.linkedin.com/in/iamzisan/
-                        </a>
-                    </li>
-                    <li>
-                        <a class="footer-link" href="mailto:ahmed.zisanahmed@gmail.com">
-                            <img class="footer-image" src="gmail.png">
-                            ahmed.zisanahmed@gmail.com
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="footer-third">
-                <ul class="fo">
-                    <!-- Add a class 'footer-link' to the list items -->
-                    <li>
-                        <a class="footer-link" href="https://github.com/iamzisan">
-                            <img class="footer-image" src="github.png">
-                            https://github.com/iamzisan
-                        </a>
-                    </li>
-                    <li>
-                        <a class="footer-link" href="https://www.google.com/maps/d/viewer?mid=1BZifmgXUgCYbcTrUdZ3bcO73KxY&hl=en_US&ll=23.739626216823712%2C90.38061618804932&z=17">
-                            <img class="footer-image" src="location.png">
-                            Dhanmondi, Dhaka 1209, Bangladesh
-                        </a>
-                    </li>
-                </ul>
-            </div>
+      <div class="footer">
+        <div class="footer-first">Zisan's Developed Portfolio</div>
+        <div class="footer-second">
+          <ul class="fo">
+            <!-- Add a class 'footer-link' to the list items -->
+            <li>
+              <a
+                class="footer-link"
+                href="https://www.linkedin.com/in/iamzisan/"
+              >
+                <img class="footer-image" src="linkedin.png" />
+                https://www.linkedin.com/in/iamzisan/
+              </a>
+            </li>
+            <li>
+              <a class="footer-link" href="mailto:ahmed.zisanahmed@gmail.com">
+                <img class="footer-image" src="gmail.png" />
+                ahmed.zisanahmed@gmail.com
+              </a>
+            </li>
+          </ul>
         </div>
-        <div class="footer-rights">
-            |  Copyright &copy; or &#169;  |  All rights reserved  |
+        <div class="footer-third">
+          <ul class="fo">
+            <!-- Add a class 'footer-link' to the list items -->
+            <li>
+              <a class="footer-link" href="https://github.com/iamzisan">
+                <img class="footer-image" src="github.png" />
+                https://github.com/iamzisan
+              </a>
+            </li>
+            <li>
+              <a
+                class="footer-link"
+                href="https://www.google.com/maps/d/viewer?mid=1BZifmgXUgCYbcTrUdZ3bcO73KxY&hl=en_US&ll=23.739626216823712%2C90.38061618804932&z=17"
+              >
+                <img class="footer-image" src="location.png" />
+                Dhanmondi, Dhaka 1209, Bangladesh
+              </a>
+            </li>
+          </ul>
         </div>
+      </div>
+      <div class="footer-rights">
+        | Copyright &copy; or &#169; | All rights reserved |
+      </div>
     </footer>
-
-
 
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script>
-        function showAlert(pageName) {
-            alert(pageName + ' is still under development.');
-        }
+      function showAlert(pageName) {
+        alert(pageName + " is still under development.");
+      }
     </script>
     <script>
-        // Define an array of strings
-        var strings = [
-            'Object Oriented Programming','Java', 'Springboot', 'Java Swing', 'Hibernate', 'javascript', 'Python',
-            'Data Science', 'Machine Learning', 'Human Computer Interaction', 'Front-End Development',
-            'Back-End Development', 'MySql', 'C++', 'Data Structure and Algorithms'
-        ];
-    
-        // Function to start the Typed.js instance
-        function startTyped() {
-            var typed = new Typed('#element', {
-                strings: strings,
-                typeSpeed: 130,
-                onComplete: function () {
-                    // When typing is complete, start the loop again
-                    typed.destroy(); // Destroy the current Typed instance
-                    setTimeout(startTyped, 1000); // Restart after a delay (1 second in this example)
-                }
-            });
-        }
-    
-        // Initial start
-        startTyped();
+      // Define an array of strings
+      var strings = [
+        "Object Oriented Programming",
+        "Java",
+        "Springboot",
+        "Java Swing",
+        "Hibernate",
+        "javascript",
+        "Python",
+        "Data Science",
+        "Machine Learning",
+        "Human Computer Interaction",
+        "Front-End Development",
+        "Back-End Development",
+        "MySql",
+        "C++",
+        "Data Structure and Algorithms",
+      ];
+
+      // Function to start the Typed.js instance
+      function startTyped() {
+        var typed = new Typed("#element", {
+          strings: strings,
+          typeSpeed: 130,
+          onComplete: function () {
+            // When typing is complete, start the loop again
+            typed.destroy(); // Destroy the current Typed instance
+            setTimeout(startTyped, 1000); // Restart after a delay (1 second in this example)
+          },
+        });
+      }
+
+      // Initial start
+      startTyped();
     </script>
-</body>
+  </body>
 </html>
