@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        html,
+        body {
+            
+            background-color: rgb(255, 255, 255);
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav{
+            display: flex;
+            background-color: rgb(131, 5, 5);
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            color: white;
+        }
+        nav ul{
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li{
+            list-style: none;
+            margin: 0 23px;
+        }
+        nav ul li a{
+            text-decoration: none;
+            color: white;
+            cursor: pointer;
+        }
+        nav ul li a:hover{
+            font-size: 1.04rem;
+            color: rgb(75, 7, 7);
+        }
+        .left{
+             font-size: 1.4rem;
+             color: white;
+        }
+
+        ul.bo{
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 660px;
+            
+            
+        }
+        li{
+            list-style: none;
+        }
+        label1{
+            position: relative;
+        }
+        input[type="checkbox"]{
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+            height: 80px;
+            width: 80px;
+            z-index: 100;
+        }
+        p{
+            position: relative;
+            height: 80px;
+            width: 80px;
+            background: hsl(0, 0%, 91%);
+            color: #555;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 46px;
+            cursor: pointer;
+            margin: 0 4px;
+            box-shadow: -1px -1px 4px rgba(255, 255, 255, 0.05),
+                 4px 4px 6px rgb(255,255,255,0.2),
+                 inset -1px -1px 4px grba(0,0,0,0.05),
+                 inset 1px 1px 1px grba(255,255,255,0.1);
+        }
+        input[type="checkbox"]:checked ~ p{
+            box-shadow: inset 0 0 2px grba(0,0,0,0.05),
+            inset 4px 4px 6px grba(255,255,255,255.05);
+            color: yellow;
+            text-shadow: 0 0 15px yellow, 0 0 25px yellow;
+            animation: glow 1.5s linear infinite;
+        }
+        @keyframes glow {
+            0%{
+                filter:hue-rotate(0deg);
+            }
+            100%{
+                filter:hue-rotate(360deg);
+            }
+        }
+        t{
+            display: flex;
+            justify-content: center;
+            margin: 44px 10px;
+            position: relative;
+            top: -223px;
+
+        }
+
+        .border-box{
+            box-sizing: border-box;
+            
+        }
+
+        footer{
+            background-color: rgb(224, 224, 224);
+            color: rgb(63, 63, 63);
+            
+
+        }
+        .footer{
+            display:flex;
+            padding: 23px 122px;
+            justify-content: space-evenly;
+        }
+        .footer ul{
+            list-style: none;
+        }
+        .footer > div{
+            width: 346px;
+        }
+        footer .footer-rights{
+            text-align: center;
+            padding: 12px 0;
+            color: rgb(104, 103, 103);
+            font-size: 0.7rem;
+        }
+        
+        .footer-image{
+            position: relative;
+            width: 10%;
+            left: -11px;
+            top: -4px;
+        }
+        .footer li{
+            display: flex;
+        }
+        .footer-first{
+            position: relative;
+            align-items: center;
+            font-size: 1.5rem;
+            display: flex;
+            top: 27px;
+        }
+        .footer-second{
+            position: relative;
+            align-items: center;
+            display: flex;
+            top: 15px;
+
+        }
+        .footer-third{
+            position: relative;
+            align-items: center;
+            display: flex;
+            top: 15px;
+
+        }
+        .footer-link {
+            cursor: pointer;
+            text-decoration: none;
+            transition: color 0.2s;
+            position: relative;
+            display: flex;
+            color: rgb(63, 63, 63);
+        }
+
+    /* Change text color to red when hovering */
+    .footer-link:hover {
+        color: rgb(9, 32, 161);
+    }
+
+        
+
+        </style>
+    
+    <title>Portfolio</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">Zisan's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a  onclick="changeTextAndRedirect(event)">Home</a></li>
+                    <li><a  onclick="changeTextAndRedirect(event)">About</a></li>
+                    <li><a  onclick="changeTextAndRedirect(event)">Projects</a></li>
+                    <li><a  onclick="changeTextAndRedirect(event)">Contact Me</a></li>
+                    
+                </ul>
+                
+            </div>
+        </nav>
+    </header>
+    <div class="border-box">
+        <ul class="bo">
+        
+            <li>
+                <input type = "checkbox" />
+                <p>
+                    W
+                </p>
+            </li>
+            <li>
+                <input type = "checkbox" />
+                <p>
+                    E
+                </p>
+            </li>
+            <li>
+                <input type = "checkbox" />
+                <p>
+                    L
+                </p>
+            </li>
+            <li>
+                <input type = "checkbox" />
+                <p>
+                    C
+                </p>
+            </li>
+            <li>
+                <input type = "checkbox" />
+                <p>
+                    O
+                </p>
+            </li>
+            <li>
+                <input type = "checkbox" />
+                <p>
+                    M
+                </p>
+            </li>
+            <li>
+                <input type = "checkbox" />
+                <p>
+                    E
+                </p>
+            </li>
+        </ul>
+        <t>Please Click all the Blocks or Words to Continue...</t>
+
+    </div>
+    
+    
+    
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                
+                Zisan's Developed Portfolio
+            </div>
+            <div class="footer-second">
+                <ul class="fo">
+                    <!-- Add a class 'footer-link' to the list items -->
+                    <li>
+                        <a class="footer-link" href="https://www.linkedin.com/in/iamzisan/">
+                            <img class="footer-image" src="linkedin.png">
+                            https://www.linkedin.com/in/iamzisan/
+                        </a>
+                    </li>
+                    <li>
+                        <a class="footer-link" href="mailto:ahmed.zisanahmed@gmail.com">
+                            <img class="footer-image" src="gmail.png">
+                            ahmed.zisanahmed@gmail.com
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-third">
+                <ul class="fo">
+                    <!-- Add a class 'footer-link' to the list items -->
+                    <li>
+                        <a class="footer-link" href="https://github.com/iamzisan">
+                            <img class="footer-image" src="github.png">
+                            https://github.com/iamzisan
+                        </a>
+                    </li>
+                    <li>
+                        <a class="footer-link" href="https://www.google.com/maps/d/viewer?mid=1BZifmgXUgCYbcTrUdZ3bcO73KxY&hl=en_US&ll=23.739626216823712%2C90.38061618804932&z=17">
+                            <img class="footer-image" src="location.png">
+                            Dhanmondi, Dhaka 1209, Bangladesh
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-rights">
+            |  Copyright &copy; or &#169;  |  All rights reserved  |
+        </div>
+    </footer>
+
+    <script>
+        // Get all the checkboxes and store them in an array
+        const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+        let isRedirecting = false;
+
+        // Add a change event listener to each checkbox
+        checkboxes.forEach(checkbox => {
+            checkbox.addEventListener('change', () => {
+                if (isRedirecting) return; // Prevent multiple clicks during redirect
+
+                // Check if all checkboxes are checked
+                const allChecked = Array.from(checkboxes).every(checkbox => checkbox.checked);
+
+                if (allChecked) {
+                    isRedirecting = true;
+                    // Change the text to "Redirecting" in green color
+                    const textElement = document.querySelector('t');
+                    textElement.style.color = 'green';
+
+                    let count = 3; // Initial countdown value
+
+                    function updateText() {
+                        textElement.textContent = `Thank You. Redirecting ${count}...`;
+                        count--;
+
+                        if (count >= 0) {
+                            // Continue the countdown
+                            setTimeout(updateText, 1000); // Wait for 1 second
+                        } else {
+                            // Perform the redirect after the countdown
+                            window.location.href = 'portfolio.html'; // Change 'next-page.html' to the URL of the next page
+                        }
+                    }
+
+                    updateText(); // Start the countdown
+                }
+            });
+        });
+
+        // Function to change text color on header list item click
+        function changeTextAndRedirect(event) {
+            const textElement = document.querySelector('t');
+            textElement.style.color = 'red';
+        }
+    </script>
+</body>
+</html>
