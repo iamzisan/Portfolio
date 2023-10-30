@@ -53,7 +53,7 @@
         display: flex;
         background-color: white;
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-        border-radius: 10px;
+        border-radius: 32px;
         padding: 138px;
         margin: 61px 283px;
         height: 344px;
@@ -68,13 +68,15 @@
         position: relative;
         height: 470px;
         top: -125px;
-        width: 79%;
+        /* margin: auto; */
+        width: auto;
       }
 
       .rightsection img {
-        width: 35%;
+        top: 32px;
+        width: 45%;
         position: relative;
-        left: 285px;
+        left: 272px;
         transition: transform 0.3s;
       }
       .rightsection img:hover {
@@ -125,7 +127,7 @@
         height: 77px;
         width: 3px;
         background: rgb(131, 5, 5);
-        margin: 0 190px;
+        margin: 0 auto;
       }
       .vertical-title {
         position: relative;
@@ -217,19 +219,24 @@
 
       @media (max-width: 768px) {
         nav {
-          flex-direction: column; /* Stack nav items vertically */
-          height: auto; /* Adjust height as needed */
-          text-align: center; /* Center-align text */
+          width: 130vw;
+          flex-direction: column;
+          height: auto;
+          text-align: center;
+          font-size: x-small;
         }
         nav ul {
           flex-direction: row; /* Make the menu items horizontal */
           margin-top: 10px; /* Add some spacing between menu items */
         }
         .firstsection {
-          flex-direction: column; /* Stack left and right sections vertically */
-          margin: 20px; /* Add margin for separation */
-          padding: 20px; /* Adjust padding as needed */
-          height: auto; /* Adjust height as needed */
+          position: relative;
+          left: 25px;
+          width: 115vw;
+          flex-direction: column;
+          margin: 37px auto;
+          padding: 20px;
+          height: 222vw;
         }
         .leftsection {
           height: 177px;
@@ -238,8 +245,9 @@
           margin: 7px;
         }
         .rightsection {
-          width: 100%; /* Full width for the right section */
-          top: 0; /* Remove vertical offset */
+          height: auto;
+          width: auto;
+          top: 0;
         }
         .rightsection img {
           top: 37px;
@@ -249,17 +257,29 @@
           left: 54px;
         }
         .secondsection {
-          height: 291vw;
-          padding: 12px;
+          position: relative;
+          left: 25px;
+          width: 115vw;
+          flex-direction: column;
+          margin: 38px auto;
+          padding: 20px;
+
+          height: 210vw;
+          /* padding: 20px; */
           top: -9px;
-          width: 84%;
+        }
+        .red {
+          color: rgb(131, 5, 5);
+          font-size: 1.5rem;
         }
         main hr {
           margin: 10px; /* Adjust margin as needed */
         }
         .secondsection .box {
+          align-items: center;
           flex-direction: column;
-          margin: 10px; /* Adjust margin as needed */
+          margin: auto;
+          width: 113vw;
         }
         .secondsection .vertical {
           height: 190px;
@@ -269,30 +289,44 @@
         }
         .vertical-title {
           top: 0; /* Reset vertical offset */
-          left: 0; /* Reset horizontal offset */
+          
         }
         .vertical-desc {
           top: 0; /* Reset vertical offset */
-          left: 0; /* Reset horizontal offset */
+          
         }
         .image-top {
           top: -15px;
-          left: 36px; /* Reset horizontal offset */
         }
+        footer {
+          width: 130vw;
+        }
+
         .footer {
+          position: relative;
+          left: 41px;
+          /* margin: auto; */
+          align-items: center;
+          padding: 44px;
           font-size: x-small;
           flex-direction: column;
           text-align: left;
         }
-        .footer > div {
-          width: 221px;
+        .footer-first {
+          position: relative;
+          align-items: center;
+          font-size: 1.3rem;
+          display: flex;
+          top: 27px;
         }
         .footer-second {
-          left: -41px;
           margin-top: 35px;
         }
         .footer-third {
-          left: -41px;
+          position: relative;
+          align-items: center;
+          display: flex;
+          top: 16px;
         }
       }
     </style>
